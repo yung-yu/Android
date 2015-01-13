@@ -1,0 +1,18 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <com.example.cleareditetext.ClearEditText
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:text="@string/clear_tip" >
+
+        <requestFocus />
+    </com.example.cleareditetext.ClearEditText>
+
+</RelativeLayout>
