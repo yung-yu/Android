@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.ui.MainActivity" >
+
+    <com.example.ui.CustomMarqueeTextView
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="50dip" 
+        android:text="@string/hello_world" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button1"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:text="stop" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button2"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_toRightOf="@+id/button2"
+        android:text="reStart" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textview"
+        android:layout_alignParentBottom="true"
+        android:text="start" />
+
+    <com.example.ui.CustomMarqueeTextView
+        android:id="@+id/CustomMaqueeTextView01"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_alignLeft="@+id/textview"
+        android:layout_below="@+id/textview"
+        android:text="@string/hello_world" />
+
+    <com.example.ui.CustomMarqueeTextView
+        android:id="@+id/CustomMaqueeTextView03"
+        android:layout_width="50dip"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/seekBar1"
+        android:layout_alignLeft="@+id/button3"
+        android:layout_alignTop="@+id/CustomMaqueeTextView02"
+        android:text="@string/hello_world" />
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button2"
+        android:layout_alignLeft="@+id/button1" />
+
+    <com.example.ui.CustomMarqueeTextView
+        android:id="@+id/CustomMaqueeTextView02"
+        android:layout_width="50dip"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/seekBar1"
+        android:layout_below="@+id/CustomMaqueeTextView01"
+        android:layout_toLeftOf="@+id/CustomMaqueeTextView03"
+        android:text="@string/hello_world" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/CustomMaqueeTextView02"
+        android:layout_alignLeft="@+id/seekBar1"
+        android:text="speed:1" />
+
+</RelativeLayout>
